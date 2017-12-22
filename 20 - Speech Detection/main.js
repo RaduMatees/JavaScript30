@@ -18,6 +18,11 @@ recognition.addEventListener('result', e => {
     p = document.createElement('p')
     words.appendChild(p)
   }
+  if (transcript.includes('get the weather')){
+    // do a get the weather function
+    // or connect to some sort of API
+    // needs to be debounced though, or ran only once
+  }
 })
 
 recognition.addEventListener('end', recognition.start)
